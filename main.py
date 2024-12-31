@@ -5,11 +5,11 @@ from scrape import (scrape_website, split_dom_content, clean_body_content,extrac
 from parse import parse_with_ollama
 
 
-st.title("AI Web Scrapper")
+st.title("कृत्रिम बुद्धिमत्ता JOB Scrapper ")
 url = st.text_input("Enter a website URl: ")
 
 if st.button("Scrape Site "):
-    st.write("Scrapping the website")
+    st.write("अपनी कुर्सी की पेटी  बांध लें हम  Scrapping 0कर रहे हैं ")
     
     result = scrape_website(url)
     body_content = extract_body_content(result)
@@ -23,7 +23,7 @@ if st.button("Scrape Site "):
 if "dom_content" in st.session_state:
     parse_description = st.text_area("Describe what you want to parse?")
 
-    if st.button("PArse Content"):
+    if st.button("Parse Content"):
         if parse_description:
             st.write("Parsing the content")
 
